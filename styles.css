@@ -5,3 +5,122 @@ html { box-sizing: border-box;}
 *, *:before, *:after {box-sizing: inherit}
 
 .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
+
+/* 
+
+// COLOR SCHEME //
+Background Color: #215A6D
+White Shade: #F6F6F6
+Black Shade: #0F0F0F
+Accent Color: #8DD7E9
+
+// FONTS //
+Heading 1: Poppins, Bold, 32px
+Heading 2: Poppins, Bold, 24px
+
+Menu: Poppins, Bold, 18px
+Body: NotoSans, Regular, 18px
+
+*/
+
+body {
+    background-color: #F6F6F6;
+}
+
+.wrapper {
+    max-width: 1200px;
+    width: 80%;
+    margin: 0 auto;
+    max-height: none;
+}
+
+/*    SECTION 1: TITLE PAGE/NAVIGATION    */
+
+header {
+    background-image: url(./summit-assets/asset-1.jpg);
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    font-family: "Poppins";
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    font-size: 32px;
+    color: #F6F6F6;
+}
+
+a {
+    text-decoration: none;
+    color: #F6F6F6
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+li {
+    display: inline;
+    padding-left: 30px;
+}
+
+.welcomeSmallH1 {
+    font-size: 32px;
+    margin: 120px 0 0 0
+}
+
+.welcomeLargeH1 {
+    font-size: 110px;
+    margin: 0;
+    line-height: .9;
+}
+
+.welcomeSmallH1, .welcomeLargeH1 {
+color: #F6F6F6;
+text-align: center;
+}
+
+/*    SECTION 2: ABOUT    */
+
+.aboutH2 {
+    font-family: "Poppins";
+    font-size: 40px;
+    color: #0F0F0F;
+    text-align: center;
+    margin: 70px 0 30px;
+}
+
+.aboutSummit {
+    font-family: "Noto Sans";
+    color: #0F0F0F;
+    text-align: center;
+    margin: 30px 400px 30px;
+    line-height: 1.8;
+}
+
+.button1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins";
+    font-size: 18px;
+    color: #0F0F0F;
+    background: #8DD7E9;
+    border: none;
+    padding: 15px 45px;
+    margin: 0 auto 70px;
+}
