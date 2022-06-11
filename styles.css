@@ -24,7 +24,7 @@ Body: NotoSans, Regular, 18px
 */
 
 body {
-    background-color: #F6F6F6;
+    background-color: white;
 }
 
 .wrapper {
@@ -101,18 +101,19 @@ text-align: center;
     font-size: 40px;
     color: #0F0F0F;
     text-align: center;
-    margin: 70px 0 30px;
+    margin: 90px 0 30px;
 }
 
 .aboutSummit {
     font-family: "Noto Sans";
+    font-size: 18px;
     color: #0F0F0F;
     text-align: center;
     margin: 30px 400px 30px;
     line-height: 1.8;
 }
 
-.button1 {
+.button1, .button2, .button3 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -121,6 +122,83 @@ text-align: center;
     color: #0F0F0F;
     background: #8DD7E9;
     border: none;
-    padding: 15px 45px;
+    padding: 15px 40px;
+}
+
+.button1 {
+    margin: 0 auto 90px;
+}
+
+/*    SECTION 3: PHOTOS & ESSENTIALS    */
+
+.flexContainer1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mountainImg {
+    height: auto;
+    width: 50vw;
+}
+
+.photoInfo {
+    display: flex;
+    flex-direction: column;
+    background-color: #F6F6F6;
+}
+
+.photosH2 {
+    font-family: "Poppins";
+    font-size: 24px;
+    color: #0F0F0F;
+    text-align: center;
+    margin: 80px 0 30px;
+}
+
+.photosParagraph {
+    margin: 0px 100px 30px;
+    position: relative;
+}
+
+.button2, .button3 {
+    position: relative;
     margin: 0 auto 70px;
+}
+
+.photosParagraph, .packingEssentialsInfo {
+    font-family: "Noto Sans";
+    font-size: 18px;
+    color: #0F0F0F;
+    text-align: center;
+    line-height: 1.8;
+}
+
+.flexContainer2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.essentialsH2 {
+    font-family: "Poppins";
+    font-size: 24px;
+    color: #0F0F0F;
+    text-align: center;
+    margin: 80px 0 30px;
+}
+
+.essentialInfo {
+    display: flex;
+    flex-direction: column;
+    background-color: #F6F6F6;
+}
+
+.packingEssentialsInfo {
+    margin: 0px 30px 30px 100px;
+    position: relative;
+    right: 30px;
+}
+
+.airplaneImg {
+    height: auto;
+    width: 50vw;
 }
