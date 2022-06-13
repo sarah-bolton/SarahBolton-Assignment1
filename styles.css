@@ -28,7 +28,7 @@ body {
 }
 
 .wrapper {
-    max-width: 1200px;
+    max-width: 75rem;
     width: 80%;
     margin: 0 auto;
     max-height: none;
@@ -54,7 +54,7 @@ nav {
 
 .logo {
     display: flex;
-    font-size: 32px;
+    font-size: 2rem;
     color: #F6F6F6;
 }
 
@@ -63,28 +63,32 @@ a {
     color: #F6F6F6
 }
 
-ul {
+.navigation {
     display: flex;
     justify-content: space-between;
     align-items: center;
     list-style-type: none;
     color: white;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 1.125px;
 }
 
 li {
     display: inline;
-    padding-left: 30px;
+    padding-left: 1.875rem;
+}
+
+.menuMobile {
+    display: none;
 }
 
 .welcomeSmallH1 {
-    font-size: 32px;
+    font-size: 2rem;
     margin: 120px 0 0 0
 }
 
 .welcomeLargeH1 {
-    font-size: 110px;
+    font-size: 6.875rem;
     margin: 0;
     line-height: .9;
 }
@@ -113,9 +117,8 @@ text-align: center;
     line-height: 1.8;
 }
 
-.button1, .button2, .button3 {
+.button1, .button2, .button3, .button4 {
     display: flex;
-    justify-content: center;
     align-items: center;
     font-family: "Poppins";
     font-size: 18px;
@@ -156,8 +159,9 @@ text-align: center;
 }
 
 .photosParagraph {
-    margin: 0px 100px 30px;
+    margin: 0px 30px 30px 100px;
     position: relative;
+    right: 35px;
 }
 
 .button2, .button3 {
@@ -195,10 +199,162 @@ text-align: center;
 .packingEssentialsInfo {
     margin: 0px 30px 30px 100px;
     position: relative;
-    right: 30px;
+    right: 35px;
 }
 
 .airplaneImg {
     height: auto;
     width: 50vw;
+}
+
+.flexContainerMobile {
+    display: none;
+}
+
+/*    SECTION 4: GREEN BANNER    */
+
+.greenBanner {
+    background-color: #215A6D;
+    height: 30vh;
+    width: 100vw;
+}
+
+/*    SECTION 4: ABOUT ME   */
+
+
+.flexContainer3 {
+    background-color: #F6F6F6;
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.wrapper2 {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 80%;
+    margin: 0 auto;
+    max-height: none;
+}
+
+.aboutImg {
+    height: 350px;
+    width: auto;
+}
+
+.aboutMeInfo {
+    display: inline-block;
+    padding-left: 35px;
+}
+
+.aboutMeH2 {
+    font-family: "Poppins";
+    font-size: 40px;
+    color: #0F0F0F;
+    text-align: left;
+    margin: 0;
+}
+
+.aboutMeParagraph {
+    font-family: "Noto Sans";
+    font-size: 18px;
+    color: #0F0F0F;
+    text-align: left;
+    line-height: 1.8;
+    margin-top: 9px;
+}
+
+/*    SECTION 6: IMAGE GALLERY   */
+
+/* .wrapper3 {
+    max-width: 1200px;
+    width: 80%;
+    margin: 0 auto;
+    max-height: none;
+}
+
+.gallery ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.image1, .image2, .image3 {
+    width: 30%;
+    height: auto;
+} */
+
+@media (max-width: 480px) {
+
+    ul {
+        display: none;
+    }
+
+    .menuMobile {
+        display: block;
+    }
+
+    .menuLine {
+        width: 40px;
+        height: 3px;
+        border-radius: 10px;
+        background-color: #F6F6F6;
+        margin-bottom: 4px;
+    }
+
+    .welcomeLargeH1 {
+        justify-content: center;
+        font-size: 6rem;
+    }
+
+    .aboutSummit {
+        margin: 0 20px 30px 20px;
+    }
+
+    .flexContainer1 {
+        flex-direction: column;
+    }
+
+    .mountainImg {
+        height: auto;
+        width: 100vw;
+    }
+
+    .flexContainerMobile {
+        flex-direction: column;
+    }
+
+    .airplaneImg {
+        height: auto;
+        width: 100vw;
+    }
+
+    .flexContainer2 {
+        display: none;
+    }
+
+    .aboutMeInfo {
+        text-align: center;
+        padding: 0;
+    }
+
+    .wrapper2 {
+        flex-direction: column;
+    }
+
+    .aboutMeH2 {
+        text-align: center;
+        padding-top: 30px;
+    }
+
+    .aboutMeParagraph {
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    .button4 {
+        display: inline;
+        align-items: center;
+        margin-top: 10px;
+    }
 }
